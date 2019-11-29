@@ -1,13 +1,13 @@
 # Reproducibility vs Replication
 
 
-## Five elements in SE experimentation [11]
+## Five elements in SE experimentation (Gómez et al. [11])
 
-1. **<u>Site</u>** 
-2. **<u>Experimenters</u>**
-3. **<u>Apparatus</u>** 
-4. **<u>Operationalizations</u>** 
-5. **<u>Population Properties</u>** 
+1. **Site** 
+2. **Experimenters**
+3. **Apparatus** 
+4. **Operationalizations** 
+5. **Population Properties** 
 
 ::: notes
 
@@ -30,10 +30,10 @@ Replication is often proposed as one of the major avenues to achieve, or ensure,
 
 ## Functions/Purposes of a replication in SE [11]
 
-1. <u>Control for Sampling Error</u>
-2. <u>Control for Artefactual Results</u> 
-3. <u>Determine Limits for Operationalizations</u>
-4. <u>Determine Limits in the Population Properties.</u>
+1. Control for Sampling Error
+2. Control for Artefactual Results 
+3. Determine Limits for Operationalizations
+4. Determine Limits in the Population Properties.
 
 ::: notes
 
@@ -49,7 +49,7 @@ Replication is often proposed as one of the major avenues to achieve, or ensure,
 
 :::
 
-## 6 Best Practices for Software Replication and Reproducibility [16]
+## 6 Best Practices for Software Replication and Reproducibility (Widder et al. [16])
 
    1. **Deliberate Design**
    2. **Documentation**

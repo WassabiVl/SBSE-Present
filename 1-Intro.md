@@ -20,7 +20,7 @@ The term SBSE was first used in 2001 by Harman and Jones [1]
 
 #### Many-Objective Publications
 
-![Fig. 2. Cumulative number of many-objective publications in SBSE (3)](./Cumulative number of many-objective publications in SBSE.bmp)
+![Fig. 2. Cumulative number of many-objective publications in SBSE (Ramírez et al.3)](./Cumulative number of many-objective publications in SBSE.bmp)
 
 ---
 
@@ -40,7 +40,7 @@ The term SBSE was first used in 2001 by Harman and Jones [1]
 | 11      | 2015 | 19                                                           | 20               |
 | 12      | 2016 | 27                                                           | 28               |
 | 13      | 2017 | 25                                                           | 26               |
-*Table 1: Number of Papers Published in Major Conferences and Journals in Recent Years [4]*
+*Table 1: Number of Papers Published in Major Conferences and Journals in Recent Years (Mane and Rao [4])*
 
 
 

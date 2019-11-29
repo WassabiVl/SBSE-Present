@@ -2,8 +2,6 @@
 
 ## Resource Gathering
 
-
-
 ### Websites used:
 
 3. https://dl.acm.org/ 
@@ -11,6 +9,7 @@
 5. https://www.ieee.org/
 4. https://www.google.com 
 5. https://scholar.google.com 
+6. https://github.com/
 
 ### Search Terms:
 
@@ -26,11 +25,29 @@
 
 ---
 
-### Results
+:::::::::::::: {.columns}
+::: {.column width="60%"}
+
+Methodology
+
+- time limit  4 months
+- citation and cited by
+- papers from last 5 years
+- public repository
+- survey papers
+- contacting authors
+
+:::
+::: {.column width="60%"}
+
+Results
 
 - SBSE Algorithms papers found  129 
 - papers with public code 15
 - Reproducibility and Reproduction papers 15
+
+:::
+::::::::::::::
 
 ---
 
@@ -75,7 +92,7 @@ http://www.splot-research.org/
 
 ## Algorithms Feature tree
 
-![Fig. 3. Algorithms Tree Chart](./AlgoTreeChart.svg)
+[Algorithms Tree Chart](./Algo Tree Chart for presentation.pdf)
 
----
+
 
