@@ -1,0 +1,7 @@
+pandoc -s -t revealjs -o output.html input.md
+pandoc -s -t revealjs --variable transition=linear -V theme=blood -o output.html 0-Outline.md 1-intro.md 2-motivation.md 3-progress.md 4-ReplicationVsReproduce.md 5-Reproducibility.md 6-Replication.md refer.md --slide-level=2
+pandoc -s -t revealjs --variable transition=linear -V theme=moon -V controls=true -o output.html 0-Outline.md 1-intro.md 2-motivation.md 3-progress.md refer.md
+  
+  
+from Md to PDF
+pandoc -o example13.pdf --pdf-engine=xelatex 0-Outline.md 1-intro.md 2-motivation.md 3-progress.md refer.md 
