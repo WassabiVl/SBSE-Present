@@ -31,6 +31,8 @@
 
 [16] D. G. Widder, J. Sunshine, and S. Fickas, “Barriers to Reproducible Scientific Programming,” in 2019 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2019, pp. 217–221.
 
+[17] K. Czarnecki, P. Grünbacher, R. Rabiser, K. Schmid, and A. Wąsowski, “Cool Features and Tough Decisions: A Comparison of Variability Modeling Approaches,” in *Proceedings of the Sixth International Workshop on Variability Modeling of Software-Intensive Systems*, New York, NY, USA, 2012, pp. 173–182.
+
 ## SBSE Algorithm Feature Tree References
 
 [1] T. H. Tan, Y. Xue, M. Chen, J. Sun, Y. Liu, and J. S. Dong, “Optimizing Selection of Competing Features via Feedback-directed Evolutionary Algorithms,” in *Proceedings of the 2015 International Symposium on Software Testing and Analysis*, New York, NY, USA, 2015, pp. 246–256.

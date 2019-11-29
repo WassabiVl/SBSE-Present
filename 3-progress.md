@@ -39,7 +39,26 @@
 
 GitHub Account has been set up to save the algorithms found and allow for a version control on the algorithms https://github.com/digital-bauhaus/reproducibility-of-SBSE
 
-### SPLOT Website and LVAT
+---
+
+## Data Types
+
+Variability modeling (VM) falls under 2 categories [17]
+
+1.  Feature modeling (FM)
+2.  Decision modeling (DM)
+
+| Name                                 | # of Objective Function | Decision Variables | Constraints    | (VM) Types |
+| ------------------------------------ | ----------------------- | ------------------ | -------------- | ---------- |
+| DTLZ                                 | 2-20                    | 20-300             | 0 and more     | DM         |
+| WFG                                  | 2-20                    | 20-300             | 0 and more     | DM         |
+| Multi-objective 0/1 Knapsack Problem | 2-4                     | 100-750            | Knapsack Limit | DM         |
+| LVAT                                 | Augmented               | 100-30,000         | 20 - unknown   | FM         |
+| SPLOT                                | Augmented               | 5-627              | 0 - 4000       | FM         |
+
+
+
+### SPLOT Website and LVAT 
 
 http://www.splot-research.org/
 - A website designed to create and save features models used by researchers
