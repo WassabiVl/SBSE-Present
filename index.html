@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Wael Al-Atrash">
+  <title>Thesis research: Reproducibility in Search-Based Software Engineering</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reset.css">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/blood.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Thesis research: Reproducibility in Search-Based Software Engineering</h1>
+  <p class="author">Wael Al-Atrash</p>
+  <p class="date">2019/11/27</p>
+</section>
+
+<section id="outline" class="title-slide slide level1"><h1>Outline</h1><ol type="1">
+<li>Introduction</li>
+<li>Motivation</li>
+<li>Progress So Far</li>
+<li>Reproducibility vs Replication</li>
+<li>Goal Requirement</li>
+</ol></section>
+<section><section id="introduction" class="title-slide slide level1"><h1>Introduction</h1></section>
+<section id="search-based-software-engineering-sbse" class="slide level2">
+<h2>Search-Based Software Engineering (SBSE)</h2>
+<p>The term SBSE was first used in 2001 by Harman and Jones [1]</p>
+</section>
+<section id="trend-in-sbse" class="slide level2">
+<h2>Trend in SBSE</h2>
+</section>
+<section class="slide level2">
+
+<h4 id="multi-objective-optimization-moo">Multi Objective Optimization (MOO)</h4>
+<figure>
+<img data-src="./mooFormal.png" alt="" /><figcaption>Fig. 1. MOO Formalization</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<h4 id="many-objective-publications">Many-Objective Publications</h4>
+<figure>
+<img data-src="./Cumulative%20number%20of%20many-objective%20publications%20in%20SBSE.bmp" alt="" /><figcaption>Fig. 2. Cumulative number of many-objective publications in SBSE (3)</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<h3 id="trend">Trend</h3>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 4%" />
+<col style="width: 68%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sr. No.</th>
+<th>Year</th>
+<th>No. of Multi/Many Objective Optimization Problems Related Papers Published</th>
+<th>Number of Papers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2005</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2006</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>2007</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>2008</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>2009</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>2010</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>2011</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>2012</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>2013</td>
+<td>18</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>2014</td>
+<td>21</td>
+<td>22</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>2015</td>
+<td>19</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>2016</td>
+<td>27</td>
+<td>28</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>2017</td>
+<td>25</td>
+<td>26</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 1: Number of Papers Published in Major Conferences and Journals in Recent Years [4]</em></p>
+</section>
+<section id="definition" class="slide level2">
+<h2>Definition:</h2>
+<ol type="1">
+<li><p><strong>SBSE</strong> [1]</p>
+<ul>
+<li>SBSE converts a software engineering problem into a computational search problem that can be tackled with a metaheuristic.</li>
+<li>Some Examples are Tabu Search and Evolution Algorithms</li>
+</ul></li>
+<li><p><strong>Metaheuristic</strong> [2]</p>
+<ul>
+<li>higher-level procedure or heuristic designed to find, generate, or select a heuristic (partial search algorithm) that may provide a sufficiently good solution to an optimization problem, especially with incomplete or imperfect information or limited computation capacity</li>
+</ul></li>
+<li><p><strong>Many-Objective Problems (MaOPs)</strong> [4]</p>
+<ul>
+<li>More challenging than MOP:
+<ul>
+<li>Consist of more than three Objectives</li>
+</ul></li>
+<li><u>High computational cost</u> due to increased evaluation of number of points required for Pareto front approximation</li>
+<li>Inability of existing evolutionary multi-objective algorithms to solve many-objective optimization problems</li>
+<li><u>Difficulty to visualize</u> the Pareto front with more than four objectives.</li>
+</ul></li>
+</ol>
+</section></section>
+<section><section id="motivation" class="title-slide slide level1"><h1>Motivation</h1></section>
+<section id="why" class="slide level2">
+<h2>Why</h2>
+<ul>
+<li>Reproducibility in computer science and other fields is a well-recognized problem.<br />
+</li>
+<li>SBSE Falls under the same issues faced by the software engineering problems of reproducing and replicating code and algorithms
+<ul>
+<li>The Meta-Heuristic factor plays an important role in this matter</li>
+</ul></li>
+<li>Software engineering and computer scientists research does not fall under the same scrutiny of developers
+<ul>
+<li>Developers have to always check, refactor, and update their code on a continuous cycle</li>
+<li>they have to work with ever changing team so interchangeability and exchange of codes has to smooth</li>
+<li>create tests to validate the code
+<ul>
+<li>unit vs functional testing</li>
+</ul></li>
+<li>Try not to reinvent the wheel</li>
+</ul></li>
+<li>As the number of SBSE publications increase, so does the need to validation
+<ul>
+<li>with the number of researches depending on previous work to progress SBSE forward</li>
+</ul></li>
+<li>Simplify Scalability in SBSE</li>
+<li>Real world software data is hard to come by
+<ul>
+<li>they are always increasing in complexity</li>
+<li>but also the hardware is increasing in processing power</li>
+</ul></li>
+</ul>
+</section>
+<section id="goal" class="slide level2">
+<h2>Goal</h2>
+<ul>
+<li>Test against real world valued attributed variability models</li>
+<li>Create an assessment tool to check the level of Reproducibility and Replication</li>
+<li>Help Future research create easier reproducible and replicable code and results</li>
+</ul>
+</section></section>
+<section><section id="progress" class="title-slide slide level1"><h1>Progress</h1></section>
+<section id="resource-gathering" class="slide level2">
+<h2>Resource Gathering</h2>
+<h3 id="websites-used">Websites used:</h3>
+<ol start="3" type="1">
+<li>https://dl.acm.org/</li>
+<li>https://www.researchgate.net/</li>
+<li>https://www.ieee.org/</li>
+<li>https://www.google.com</li>
+<li>https://scholar.google.com</li>
+</ol>
+<h3 id="search-terms">Search Terms:</h3>
+<ol type="1">
+<li>search based software engineering</li>
+<li>Search-based software engineering</li>
+<li>Many-objective optimization</li>
+<li>Multi-objective optimization</li>
+<li>Evolutionary algorithms</li>
+<li>Feature models</li>
+<li>Software Product Lines</li>
+<li>Reproducibility</li>
+<li>Replication</li>
+</ol>
+</section>
+<section class="slide level2">
+
+<h3 id="results">Results</h3>
+<ul>
+<li>SBSE Algorithms papers found 129</li>
+<li>papers with public code 15</li>
+<li>Papers Describing differences between Reproducibility and Reproduction and how to assess each ones depending on different standards</li>
+</ul>
+</section>
+<section id="others" class="slide level2">
+<h2>Others</h2>
+<h3 id="version-control">Version Control</h3>
+<p>GitHub Account has been set up to save the algorithms found and allow for a version control on the algorithms https://github.com/digital-bauhaus/reproducibility-of-SBSE</p>
+<h3 id="splot-website-and-lvat">SPLOT Website and LVAT</h3>
+<p>http://www.splot-research.org/ - A website designed to create and save features models used by researchers - some features can range from 10 to 625 with ability to calculate valid configurations - but attributes have to be augmented into the features</p>
+</section>
+<section id="algorithms-feature-tree" class="slide level2">
+<h2>Algorithms Feature tree</h2>
+<figure>
+<img data-src="./AlgoTreeChart.svg" alt="" /><figcaption>Fig. 3. Algorithms Tree Chart</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section><section id="reproducibility-vs-replication" class="title-slide slide level1"><h1>Reproducibility vs Replication</h1></section>
+<section id="definitions" class="slide level2">
+<h2>Definitions</h2>
+<p><strong><u>Reproducibility:</u></strong> is the closeness of the agreement between the results of measurements of the same measurand carried out with same methodology described in the corresponding scientific evidence. [6]</p>
+<p><u><strong>Reproducibility</strong></u> the ability of a study to be reproduced, in whole or in part, by an independent research team. partially because being able to repeat specific steps of a study, while changing others, is the basis for accurate benchmarking of research methodologies and tools, and to detect intermediate steps subject to improvement [7]</p>
+<p><strong><u>Replication:</u></strong> An attempt to reproduce an empirical study in order to further validate its findings, or the successful outcome of such an attempt. Replication is often proposed as one of the major avenues to achieve, or ensure, greater validity in software engineering research. [10]</p>
+</section>
+<section id="five-elements-in-se-experimentation-11" class="slide level2">
+<h2>Five elements in SE experimentation [11]</h2>
+<ol type="1">
+<li><strong><u>Site:</u></strong> Represents the place where the replication is conducted. Exp. Computer</li>
+<li><strong><u>Experimenters:</u></strong> The experimenters in a replication can be the same people as participated in the reference experiment, different experimenters or a mixture of both</li>
+<li><strong><u>Apparatus:</u></strong> design, instruments, forms, materials, experimental objects and procedures used to run an experiment</li>
+<li><strong><u>Operationalizations:</u></strong> The cause operationalizations represent the treatments to be evaluated in the experiment (independent variables) whereas the effect operationalizations represent the response variables (dependent variables) that we use to measure the effects of the treatments.</li>
+<li><strong><u>Population Properties:</u></strong> subjects participating/experimental objects</li>
+</ol>
+</section>
+<section id="functionspurposes-of-a-replication-in-se-11" class="slide level2">
+<h2>Functions/Purposes of a replication in SE [11]</h2>
+<ol type="1">
+<li><p><u>Control for Sampling Error</u></p>
+<ul>
+<li>if the 5 elements are kept unchanged, the purpose is verify that the results output by the reference experiment are not chance outcomes</li>
+</ul></li>
+<li><p><u>Control for Artefactual Results</u></p>
+<ul>
+<li>if site, experimenters or apparatus is changed, the purpose verify that the observed results are not artefactual, that is, they reflect reality and are not a product of the site, experimenters or the apparatus setup</li>
+</ul></li>
+<li><p><u>Determine Limits for Operationalizations</u></p>
+<ul>
+<li>if Operations Change, this determine the range of variation of the treatments (independent variables) and the measures (independent variables) used to measure the effects of the treatments.</li>
+</ul></li>
+<li><p><u>Determine Limits in the Population Properties.</u></p>
+<ul>
+<li>If the population properties</li>
+<li>the purpose of this replication is to determine the types of subjects or the types of experimental objects to which the results of the replication can be generalized.</li>
+</ul></li>
+</ol>
+</section>
+<section id="best-practices-for-software-replication-and-reproducibility-16" class="slide level2">
+<h2>6 Best Practices for Software Replication and Reproducibility [16]</h2>
+<ol type="1">
+<li><strong>Deliberate Design</strong>
+<ol type="1">
+<li>A process to determine requirements for the system, and plan what to build and how to build it.</li>
+<li>the interface should be reusable and thus easier to reproduce</li>
+</ol></li>
+<li><strong>Documentation</strong>
+<ol type="1">
+<li>Documentation is material which teaches others about the purpose of, correct usage of, or suggestions for extending or modifying systems.</li>
+<li>Documenting code should explains how to reproduce results from code</li>
+</ol></li>
+<li><strong>Use Existing Components</strong>
+<ol type="1">
+<li>The usage, when possible, of existing code, such as libraries, packages, or frameworks to build a system.</li>
+<li>Existing and vetted software components are less likely to have errors, and no need for reinventing the wheel</li>
+</ol></li>
+<li><strong>Use a Version Control System</strong>
+<ol type="1">
+<li>Version control systems help teams track changes to code and data, and make undoing changes easier</li>
+<li>backup, and facilitate public release by easing code sharing between researchers</li>
+</ol></li>
+<li><strong>Testing</strong>
+<ol type="1">
+<li>Software testing is a manual or automatic process to ensure that the system under test meets given requirements and other quality attributes.</li>
+<li>test cases, allow others to understand new code better, thus assisting external replicability</li>
+</ol></li>
+<li><strong>Public Release</strong>
+<ol type="1">
+<li>Publicly releasing code on hosting sites such as GitHub, or even as part of a formal academic review and publication process.</li>
+<li>Public release of code allows others to critique and replicate the original experiment using the original code</li>
+</ol></li>
+</ol>
+</section>
+<section id="barriers-summary-16" class="slide level2">
+<h2>Barriers (summary) [16]:</h2>
+<ol type="1">
+<li>Tool based barriers</li>
+<li>Self efficacy barriers</li>
+<li>Training-related barriers</li>
+<li>Team related barriers</li>
+</ol>
+</section>
+<section id="solutions-16" class="slide level2">
+<h2>Solutions [16]:</h2>
+<ol type="1">
+<li>Increased education</li>
+<li>adaption of existing tools</li>
+<li>More Incentives</li>
+</ol>
+</section></section>
+<section><section id="reproducibility" class="title-slide slide level1"><h1>Reproducibility</h1></section>
+<section id="aim-of-any-reproducibility-9" class="slide level2">
+<h2>Aim of any reproducibility [9]:</h2>
+<ol type="1">
+<li><strong><u>Evidence of correctness</u></strong>:</li>
+<li><strong><u>New observations can be made</u></strong></li>
+<li><strong><u>Increasing complexity of data analyses</u></strong>
+<ul>
+<li>Data sets and Computations are getting larger and sophisticated</li>
+</ul></li>
+<li><strong><u>The focus remains on the content of the data analysis</u></strong></li>
+<li><strong><u>Increasing Reproducibility: [7]</u></strong>
+<ul>
+<li>when a study finds a method with less effort to reproduce it, or it allows new types of reproduction studies.</li>
+</ul></li>
+</ol>
+</section>
+<section id="problems" class="slide level2">
+<h2>Problems:</h2>
+<ul>
+<li>Reproducibility researchers usually focus on the description of the methodology [7]
+<ul>
+<li>They hope to reproduce them with the same, similar, or completely different source data to verify, complement or extend the results</li>
+</ul></li>
+<li>Methodology in a paper may not be enough [7]</li>
+<li>Lack of access to such software and data [7]
+<ul>
+<li>This discourages and makes reproduction more difficult</li>
+</ul></li>
+<li>Evaluating is not easy since many information and artefacts are required in order to thoroughly evaluate the capabilities of a testing technique [5]</li>
+<li>Software testing is very multidisciplinary [5]</li>
+<li>Drawing a precise line to establish the scope affecting the test is very challenging [5]</li>
+</ul>
+</section>
+<section id="one-solution-compendiums-5" class="slide level2">
+<h2>One Solution: Compendiums [5]</h2>
+<ul>
+<li>RCC ( Reproducibility Research Compendium) [8]
+<ul>
+<li>Usually provided by the researcher</li>
+<li>it is a container that provides all necessary components to reproduce the research</li>
+</ul></li>
+<li>https://research-compendium.science/
+<ul>
+<li>a collection of tools and sites where researchers can upload their RCC.</li>
+<li>the website shows a collection of RCC tagged research</li>
+<li>yet there is not one agreed upon standard on the container and framework</li>
+<li>they tried to simplify the process by making researchers add a tag to there repository “research compendium” or “research-compendium”</li>
+</ul></li>
+</ul>
+</section>
+<section id="elements-that-impact-reproducibility" class="slide level2">
+<h2>Elements that Impact Reproducibility</h2>
+<figure>
+<img data-src="./reproducibilityElements.bmp" alt="" /><figcaption>Fig. 3 Elements with an impact on reproducibility, organized according to their relationships during the research process (7)</figcaption>
+</figure>
+<ol type="1">
+<li><strong><u>Data source</u></strong>: Where the “real world” data resides .</li>
+<li><strong><u>Retrieval methodology</u></strong>. Data has to be retrieved if the researchers can’t work directly with the Source</li>
+<li><strong><u>Raw dataset.</u></strong> Data “as such”, directly obtained from the data source by means of the retrieval methodology.</li>
+<li><strong><u>Extraction methodology.</u></strong> Process, usually implemented (totally or in part) with software tools, of extracting, cleaning and storing the relevant data from the raw dataset.</li>
+<li><strong><u>Study parameters.</u></strong> parameters control which study part actually is being analyzed.</li>
+<li><strong><u>Processed dataset.</u></strong> The application of the extraction methodology (and possibly the study parameters) to the raw dataset produces the processed dataset, which will be the input to the analysis methodology.</li>
+<li><strong><u>Analysis methodology.</u></strong> Process, usually implemented (totally or in part) with software tools, of how the processed dataset is analyzed and studied to obtain the results dataset.</li>
+<li><strong><u>Results dataset.</u></strong> It is produced by applying the analysis methodology to the processed dataset and will be the basis for the research results and outcomes.</li>
+</ol>
+</section>
+<section id="impact-level-on-reproducibility-7" class="slide level2">
+<h2>Impact Level on Reproducibility [7]</h2>
+<p>The level of detail, availability, and characteristic of each elements impacts heavily on the reproducibility. difficulty level is determined by:</p>
+<ul>
+<li><em>Identification</em>: Where can the (original) element be obtained from?</li>
+<li><em>Description</em>: How detailed is the published information about the element, including its internal organization and structure, and its semantics?</li>
+<li><em>Availability</em>: How easy is it for a researcher to obtain the element, or have access to it?</li>
+<li><em>Persistence</em>: How likely is the element to be available in the future?</li>
+<li><em>Flexibility</em>. How flexible is the element, how easily can it be adapted to new environments?</li>
+</ul>
+<figure>
+<img data-src="./RSTRCfig1.png" alt="" /><figcaption>Fig. 4. Proposed reproducible research initiative for evaluation (7)</figcaption>
+</figure>
+</section></section>
+<section><section id="replication" class="title-slide slide level1"><h1>Replication</h1></section>
+<section id="biggest-downfall" class="slide level2">
+<h2>Biggest Downfall</h2>
+<p>Researchers made many changes to the replication process/research that it was impossible to infer the consequences of their comparison, henceforth they reported an unsatisfactory aggregation results [12]</p>
+</section>
+<section id="other-fields" class="slide level2">
+<h2>Other Fields</h2>
+<p>Taken from the fields of business, social science and others, Replication can be summarized in three groups [12]</p>
+<ol type="1">
+<li>Replications that vary little or not at all with respect to the reference experiment.</li>
+<li>Replications that do vary but still follow the same method as the reference experiment.</li>
+<li>Replications that use different methods to verify the reference experiment results.</li>
+</ol>
+</section>
+<section id="internal-vs-external-13" class="slide level2">
+<h2>Internal Vs External [13]</h2>
+<p>“<em>The <strong>internal–external distinction</strong> is a distinction used in philosophy to divide an <a href="https://en.wikipedia.org/wiki/Ontology">ontology</a> into two parts: an internal part consisting of a linguistic framework and observations related to that framework, and an external part concerning practical questions about the utility of that framework.</em>” [6]</p>
+<p><strong><u>External Quality Characteristics:</u></strong> Correctness, Usability, Efficiency, Reliability, Integrity, Adaptability, Accuracy, and Robustness.</p>
+<p><strong><u>Internal Quality Characteristics:</u></strong> Maintainability, Flexibility, Portability, Re-usability, Readability, Testability, and Understandability.</p>
+</section>
+<section id="close-vs-differentiated-15" class="slide level2">
+<h2>Close Vs Differentiated [15]</h2>
+<p><strong><u>Exact replication:</u></strong> is where <em>Conceptual, Methodological, and Substantive</em> domains of research are held constant - Repeat studies exactly reproduce the conditions of the original study in an attempt to see whether the empirical findings remain the same - Repeat studies exactly reproduce the conditions of the original study in an attempt to see whether the empirical findings remain the same</p>
+<p><strong><u>Close replication:</u></strong> is where slight variation is permitted in <em>Conceptual, Methodological, or Substantive</em> domains of research - Close replication is a category in which most aspects of a study are invariant - Use of a non-randomly selected holdout sample is a simple kind of close replication</p>
+<p><strong><u>Differentiated replication:</u></strong> is where the variation in <em>Conceptual, Methodological, and/or Substantive</em> domains of research is deliberate or purposeful - Differentiated replication discovers whether an empirical finding generalizes—whether the finding is a candidate empirical generalizations</p>
+</section>
+<section id="schemas-10" class="slide level2">
+<h2>Schemas [10]:</h2>
+<p>Almqvist defines the following four replication types:</p>
+<ol type="1">
+<li>Similar-external replications.</li>
+<li>Improved-internal replications.</li>
+<li>Similar-internal replications.</li>
+<li>Differentiated-external replications.</li>
+</ol>
+</section></section>
+<section><section id="references" class="title-slide slide level1"><h1>References</h1><p>[1] M. Harman and B. F. Jones, “Search-based software engineering,” Information and Software Technology, vol. 43, no. 14, pp. 833–839, Dec. 2001.</p>
+<p>[2] L. Bianchi, M. Dorigo, L. M. Gambardella, and W. J. Gutjahr, “A survey on metaheuristics for stochastic combinatorial optimization,” Nat Comput, vol. 8, no. 2, pp. 239–287, Jun. 2009.</p>
+<p>[3] A. Ramírez, J. R. Romero, and S. Ventura, “A survey of many-objective optimization in search-based software engineering,” <em>Journal of Systems and Software</em>, vol. 149, pp. 382–395, Mar. 2019.</p>
+<p>[4] S. U. Mane and M. R. N. Rao, “Many-Objective Optimization: Problems and Evolutionary Algorithms – A Short Review,” vol. 12, no. 20, p. 20, 2017.</p>
+<p>[5] F. G. de Oliveira Neto, R. Torkar, and P. D. L. Machado, “An Initiative to Improve Reproducibility and Empirical Evaluation of Software Testing Techniques,” in <em>Proceedings of the 37th International Conference on Software Engineering - Volume 2</em>, Piscataway, NJ, USA, 2015, pp. 575–578.</p>
+<p>[6] B. D. McCullough, K. A. McGeary, and T. D. Harrison, “Lessons from the JMCB Archive,” <em>Journal of Money, Credit, and Banking</em>, vol. 38, no. 4, pp. 1093–1107, Jun. 2006.</p>
+<p>[7] J. M. González-Barahona and G. Robles, “On the reproducibility of empirical software engineering studies based on data retrieved from development repositories,” Empir Software Eng, vol. 17, no. 1, pp. 75–89, Feb. 2012.</p>
+<p>[8] https://research-compendium.science/ accessed 26 Nov 2019</p>
+<p>[9] “The relevance of reproducible research,” <em>labfolder</em>, 27-Jun-2017. [Online]. Available: https://www.labfolder.com/blog/the-relevance-of-reproducible-research/. [Accessed: 27-Nov-2019].</p>
+<p>[10] J. Almqvist, “Replication of Controlled Experiments in Empirical Software Engineering - A Survey,” 2006.</p>
+<p>[11] O. S. Gómez, N. Juristo, and S. Vegas, “Replications types in experimental disciplines,” presented at the ESEM 2010 - Proceedings of the 2010 ACM-IEEE International Symposium on Empirical Software Engineering and Measurement, 2010.</p>
+<p>[12] O. S. Gómez, N. Juristo, and S. Vegas, “Replications types in experimental disciplines,” presented at the ESEM 2010 - Proceedings of the 2010 ACM-IEEE International Symposium on Empirical Software Engineering and Measurement, 2010.</p>
+<p>[13] josuesantos, “Internal vs. External Software Quality,” <em>Mike Long’s Blog</em>, 31-Oct-2010. https://meekrosoft.wordpress.com/2010/10/31/internal-and-external-software-quality/</p>
+<p>[14] M. D. Uncles and S. Kwok, “Designing research with in-built differentiated replication,” <em>Journal of Business Research</em>, vol. 66, no. 9, pp. 1398–1405, Sep. 2013.</p>
+<p>[15] Wikipedia https://en.wikipedia.org/wiki/Internal%E2%80%93external_distinction March, 2019</p>
+<p>[16] D. G. Widder, J. Sunshine, and S. Fickas, “Barriers to Reproducible Scientific Programming,” in 2019 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2019, pp. 217–221.</p></section>
+<section id="sbse-algorithm-feature-tree-references" class="slide level2">
+<h2>SBSE Algorithm Feature Tree References</h2>
+<p>[1] T. H. Tan, Y. Xue, M. Chen, J. Sun, Y. Liu, and J. S. Dong, “Optimizing Selection of Competing Features via Feedback-directed Evolutionary Algorithms,” in <em>Proceedings of the 2015 International Symposium on Software Testing and Analysis</em>, New York, NY, USA, 2015, pp. 246–256.</p>
+<p>[2] A. S. Sayyad, J. Ingram, T. Menzies, and H. Ammar, “Scalable Product Line Configuration: A Straw to Break the Camel’s Back,” in <em>Proceedings of the 28th IEEE/ACM International Conference on Automated Software Engineering</em>, Piscataway, NJ, USA, 2013, pp. 465–474.</p>
+<p>[3] A. S. Sayyad, T. Menzies, and H. Ammar, “On the Value of User Preferences in Search-based Software Engineering: A Case Study in Software Product Lines,” in <em>Proceedings of the 2013 International Conference on Software Engineering</em>, Piscataway, NJ, USA, 2013, pp. 492–501.</p>
+<p>[4] A. S. Sayyad, J. Ingram, T. Menzies, and H. Ammar, “Optimum Feature Selection in Software Product Lines: Let Your Model and Values Guide Your Search,” in <em>Proceedings of the 1st International Workshop on Combining Modelling and Search-Based Software Engineering</em>, Piscataway, NJ, USA, 2013, pp. 22–27.</p>
+<p>[5] Y. Xue and Y.-F. Li, “Multi-objective Integer Programming Approaches for Solving Optimal Feature Selection Problem: A New Perspective on Multi-objective Optimization Problems in SBSE,” in <em>Proceedings of the 40th International Conference on Software Engineering</em>, New York, NY, USA, 2018, pp. 1231–1242.</p>
+<p>[6] R. M. Hierons, M. Li, X. Liu, S. Segura, and W. Zheng, “SIP: Optimal Product Selection from Feature Models Using Many-Objective Evolutionary Optimization,” <em>ACM Trans. Softw. Eng. Methodol.</em>, vol. 25, no. 2, pp. 17:1–17:39, Apr. 2016.</p>
+<p>[7] T. Chen, K. Li, R. Bahsoon, and X. Yao, “FEMOSAA: Feature-Guided and Knee-Driven Multi-Objective Optimization for Self-Adaptive Software,” <em>ACM Trans. Softw. Eng. Methodol.</em>, vol. 27, no. 2, pp. 5:1–5:50, Jun. 2018.</p>
+<p>[8] C. Henard, M. Papadakis, M. Harman, and Y. Le Traon, “Combining Multi-objective Search and Constraint Solving for Configuring Large Software Product Lines,” in <em>Proceedings of the 37th International Conference on Software Engineering - Volume 1</em>, Piscataway, NJ, USA, 2015, pp. 517–528.</p>
+<p>[9] J. Guo and K. Shi, “To Preserve or Not to Preserve Invalid Solutions in Search-based Software Engineering: A Case Study in Software Product Lines,” in <em>Proceedings of the 40th International Conference on Software Engineering</em>, New York, NY, USA, 2018, pp. 1027–1038.</p>
+<p>[10] Y. Xue <em>et al.</em>, “IBED: Combining IBEA and DE for optimal feature selection in software product line engineering,” <em>Applied Soft Computing</em>, vol. 49, Aug. 2016.</p>
+<p>[11] Y. Xiang, Y. Zhou, M. Li, and Z. Chen, “A Vector Angle-Based Evolutionary Algorithm for Unconstrained Many-Objective Optimization,” <em>IEEE Transactions on Evolutionary Computation</em>, vol. 21, no. 1, pp. 131–152, Feb. 2017.</p>
+<p>[12] Y. Xiang, Y. Zhou, Z. Zheng, and M. Li, “Configuring Software Product Lines by Combining Many-Objective Optimization and SAT Solvers,” <em>ACM Trans. Softw. Eng. Methodol.</em>, vol. 26, no. 4, pp. 14:1–14:46, Feb. 2018.</p>
+<p>[13] M. Miyakawa, H. Sato, and Y. Sato, “Utilization of Infeasible Solutions in MOEA/D for Solving Constrained Many-objective Optimization Problems,” in <em>Proceedings of the Genetic and Evolutionary Computation Conference Companion</em>, New York, NY, USA, 2017, pp. 35–36.</p>
+<p>[14] W. Sheng, K. Liu, Y. Li, Y. Liu, and X. Meng, “Improved Multiobjective Harmony Search Algorithm with Application to Placement and Sizing of Distributed Generation,” <em>Mathematical Problems in Engineering</em>, 2014. [Online]. Available: https://www.hindawi.com/journals/mpe/2014/871540/. [Accessed: 28-Nov-2019].</p>
+<p>[15] T. Lin, H. Zhang, K. Zhang, Z. Tu, and N. Cui, “An adaptive multiobjective estimation of distribution algorithm with a novel Gaussian sampling strategy,” <em>Soft Comput</em>, vol. 21, no. 20, pp. 6043–6061, Oct. 2017.</p>
+<p>[16] M.-Y. Ameca-Alducin, E. Mezura-Montes, and N. Cruz-Ramírez, “A Repair Method for Differential Evolution with Combined Variants to Solve Dynamic Constrained Optimization Problems,” in <em>Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation</em>, New York, NY, USA, 2015, pp. 241–248.</p>
+<p>[17] T. Chen and R. Bahsoon, “Self-Adaptive and Online QoS Modeling for Cloud-Based Software Services,” <em>IEEE Transactions on Software Engineering</em>, vol. 43, no. 5, pp. 453–475, May 2017.</p>
+<p>[18] R. Hernández Gómez and C. A. Coello Coello, “Improved Metaheuristic Based on the R2 Indicator for Many-Objective Optimization,” in <em>Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation</em>, New York, NY, USA, 2015, pp. 679–686.</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Transition style
+        transition: 'linear', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
