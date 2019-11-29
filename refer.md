@@ -33,6 +33,16 @@
 
 [17] K. Czarnecki, P. Grünbacher, R. Rabiser, K. Schmid, and A. Wąsowski, “Cool Features and Tough Decisions: A Comparison of Variability Modeling Approaches,” in *Proceedings of the Sixth International Workshop on Variability Modeling of Software-Intensive Systems*, New York, NY, USA, 2012, pp. 173–182.
 
+[18] K. Deb, L. Thiele, M. Laumanns, and E. Zitzler, “Scalable Test Problems for Evolutionary Multiobjective Optimization,” in *Evolutionary Multiobjective Optimization: Theoretical Advances and Applications*, A. Abraham, L. Jain, and R. Goldberg, Eds. London: Springer, 2005, pp. 105–145.
+
+[19] “Walking Fish Group: Hypervolume Project.” [Online]. Available: http://www.wfg.csse.uwa.edu.au/hypervolume/. [Accessed: 29-Nov-2019].
+
+[20] “ETH - SOP - Downloads/Material - Supplementary Material - Test Problem Suite.” [Online]. Available: https://sop.tik.ee.ethz.ch/download/supplementary/testProblemSuite/. [Accessed: 29-Nov-2019].
+
+[21] “Google Code Archive - Long-term storage for Google Code Project Hosting.” [Online]. Available: https://code.google.com/archive/p/linux-variability-analysis-tools/. [Accessed: 29-Nov-2019].
+
+[22]  “SPLOT - Software Product Line Online Tools.” [Online]. Available: http://www.splot-research.org/. [Accessed: 29-Nov-2019].
+
 ## SBSE Algorithm Feature Tree References
 
 [1] T. H. Tan, Y. Xue, M. Chen, J. Sun, Y. Liu, and J. S. Dong, “Optimizing Selection of Competing Features via Feedback-directed Evolutionary Algorithms,” in *Proceedings of the 2015 International Symposium on Software Testing and Analysis*, New York, NY, USA, 2015, pp. 246–256.

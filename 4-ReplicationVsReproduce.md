@@ -1,6 +1,23 @@
 # Reproducibility vs Replication
 
-## Definitions
+
+## Five elements in SE experimentation [11]
+
+1. **<u>Site</u>** 
+2. **<u>Experimenters</u>**
+3. **<u>Apparatus</u>** 
+4. **<u>Operationalizations</u>** 
+5. **<u>Population Properties</u>** 
+
+::: notes
+
+Definitions
+
+1. **<u>Site:</u>** Represents the place where the replication is conducted. Exp. Computer
+2. **<u>Experimenters:</u>**  The experimenters in a replication can be the same people as participated in the reference experiment, different experimenters or a mixture of both
+3. **<u>Apparatus:</u>** design, instruments, forms, materials, experimental objects and procedures used to run an experiment 
+4. **<u>Operationalizations:</u>**  The cause operationalizations represent the treatments to be evaluated in the experiment (independent variables) whereas the effect operationalizations represent the response variables (dependent variables) that we use to measure the effects of the treatments.
+5. **<u>Population Properties:</u>** subjects participating/experimental objects
 
 **<u>Reproducibility:</u>** is the closeness of the agreement between the results of measurements of the same measurand carried out with same methodology described in the corresponding scientific evidence. [6]
 
@@ -9,35 +26,41 @@
 **<u>Replication:</u>** An attempt to reproduce an empirical study in order to further validate its findings, or the successful outcome of such an attempt.
 Replication is often proposed as one of the major avenues to achieve, or ensure, greater validity in software engineering research. [10] 
 
-## Five elements in SE experimentation [11]
-
-1. **<u>Site:</u>** Represents the place where the replication is conducted. Exp. Computer
-2. **<u>Experimenters:</u>**  The experimenters in a replication can be the same people as participated in the reference experiment, different experimenters or a mixture of both
-3. **<u>Apparatus:</u>** design, instruments, forms, materials, experimental objects and procedures used to run an experiment 
-4. **<u>Operationalizations:</u>**  The cause operationalizations represent the treatments to be evaluated in the experiment (independent variables) whereas the effect operationalizations represent the response variables (dependent variables) that we use to measure the effects of the treatments.
-5.  **<u>Population Properties:</u>** subjects participating/experimental objects
+:::
 
 ## Functions/Purposes of a replication in SE [11]
 
 1. <u>Control for Sampling Error</u>
-	
-	- if the 5 elements are kept unchanged, the purpose is verify that the results output by the reference experiment are not chance outcomes 
-	
 2. <u>Control for Artefactual Results</u> 
-	
-	- if site, experimenters or apparatus is changed, the purpose verify that the observed results are not artefactual, that is, they reflect reality and are not a product of the site, experimenters or the apparatus setup
-	
 3. <u>Determine Limits for Operationalizations</u>
-	
-	- if Operations Change, this determine the range of variation of the treatments (independent variables) and the measures (independent variables) used to measure the effects of the treatments.
-	
 4. <u>Determine Limits in the Population Properties.</u>
-	- If the population properties 
+
+::: notes
+
+1. Control for Sampling Error
+	- if the 5 elements are kept unchanged, the purpose is verify that the results output by the reference experiment are not chance outcomes 
+2. <u>Control for Artefactual Results</u> 
+	- if site, experimenters or apparatus is changed, the purpose verify that the observed results are not artefactual, that is, they reflect reality and are not a product of the site, experimenters or the apparatus setup
+3. <u>Determine Limits for Operationalizations</u>
+	- if Operations Change, this determine the range of variation of the treatments (independent variables) and the measures (independent variables) used to measure the effects of the treatments.
+4. <u>Determine Limits in the Population Properties.</u>
+	- If the population properties changes
 	- the purpose of this replication is to determine the types of subjects or the types of experimental objects to which the results of the replication can be generalized.
-   
+
+:::
+
 ## 6 Best Practices for Software Replication and Reproducibility [16]
 
    1. **Deliberate Design**
+   2. **Documentation**
+   3. **Use Existing Components**
+   4. **Use a Version Control System**
+   5. **Testing**
+   6. **Public Release**
+
+::: notes
+
+1. **Deliberate Design**
       1. A  process  to  determine  requirements  for  the system, and plan what to build and how to build it.
       2. the interface should be reusable and thus easier to reproduce
    2. **Documentation**
@@ -56,6 +79,7 @@ Replication is often proposed as one of the major avenues to achieve, or ensure,
       1. Publicly  releasing  code  on  hosting  sites  such as  GitHub,  or  even  as  part  of  a  formal  academic  review  and publication process.
       2. Public release of code allows others to critique and replicate the original experiment using the original code
 
+:::
 
 ## Barriers (summary) [16]:
 

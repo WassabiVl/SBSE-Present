@@ -2,15 +2,23 @@
 
 ## Aim of any reproducibility [9]:
 
-1.  **<u>Evidence of correctness</u>**:
-2.  **<u>New observations can be made</u>**
-3.  **<u>Increasing complexity of data analyses</u>** 
-    - Data sets and Computations are getting larger and sophisticated
+1.  **<u>Evidence of correctness</u>**
+2.  **<u>New observations</u>**
+3.  **<u>Increasing data complexity usage</u>**
 4.  **<u>The focus remains on the content of the data analysis</u>** 
-5.  **<u>Increasing Reproducibility: [7]</u>**
-    - when a study finds a method with less effort to reproduce it, or it allows new types of reproduction studies. 
+5.  **<u>Increasing Reproducibility [7]</u>**
+    - less effort
+    - new reproduction means
 
-## Problems:
+## Problems [7] [5]:
+
+- Methodology focus
+- Software and data access
+- Software Testing
+- scope definition
+
+::: notes
+
 - Reproducibility researchers usually focus on the description of the methodology [7]
 	- They hope to reproduce them with the same, similar, or completely different source data to verify, complement or extend the results
 - Methodology in a paper may not be enough [7]
@@ -20,7 +28,15 @@
 - Software testing is very multidisciplinary [5]
 - Drawing a precise line to establish the scope affecting the test is very challenging [5]
 
+:::
+
 ## One Solution: Compendiums [5]
+
+- RCC  [Reproducibility Research Compendium](https://research-compendium.science/)
+- tagged with "research compendium"  [8]
+
+::: notes
+
 - RCC ( Reproducibility Research Compendium) [8]
 	- Usually provided by the researcher
 	- it is a container that provides all necessary components to reproduce the research
@@ -29,10 +45,15 @@
 	- the website shows a collection of RCC tagged research
 	- yet there is not one agreed upon standard on the container and framework 
 	- they tried to simplify the process by making researchers add a tag to there repository "research compendium" or "research-compendium"
+	
+
+:::
 
 ## Elements that Impact Reproducibility
 
 ![Fig. 3 Elements with an impact on reproducibility, organized according to their relationships during the research process (7)](./reproducibilityElements.bmp)
+
+::: notes
 
 1. **<u>Data source</u>**: Where the “real world” data resides .
 2. **<u>Retrieval methodology</u>**. Data has to be retrieved if the researchers can't work directly with the Source
@@ -43,14 +64,29 @@
 7. **<u>Analysis methodology.</u>** Process, usually implemented (totally or in part) with software tools, of how the processed dataset is analyzed and studied to obtain the results dataset.
 8. **<u>Results dataset.</u>** It is produced by applying the analysis methodology to the processed dataset and will be the basis for the research results and outcomes. 
 
+:::
+
 ## Impact Level on Reproducibility [7]
+
+- *Identification*
+- *Description*
+- *Availability*
+- *Persistence*
+- *Flexibility*
+
+::: notes
+
 The level of detail, availability, and characteristic  of each elements impacts heavily on the reproducibility.
 difficulty level is determined by:
 
 - *Identification*: Where can the (original) element be obtained from?
 - *Description*: How detailed is the published information about the element, including its internal organization and structure, and its semantics?
--  *Availability*: How easy is it for a researcher to obtain the element, or have access to it?
+- *Availability*: How easy is it for a researcher to obtain the element, or have access to it?
 - *Persistence*: How likely is the element to be available in the future?
 - *Flexibility*. How flexible is the element, how easily can it be adapted to new environments?
 
+:::
+
 ![Fig. 4. Proposed reproducible research initiative for evaluation (7)](./RSTRCfig1.png)
+
+---

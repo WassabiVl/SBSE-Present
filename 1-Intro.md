@@ -42,9 +42,11 @@ The term SBSE was first used in 2001 by Harman and Jones [1]
 | 13      | 2017 | 25                                                           | 26               |
 *Table 1: Number of Papers Published in Major Conferences and Journals in Recent Years [4]*
 
----
 
-## Definition:
+
+::: notes
+
+Definition:
 
 1. **SBSE** [1]
 	
@@ -60,4 +62,6 @@ The term SBSE was first used in 2001 by Harman and Jones [1]
 	- <u>High computational cost</u> due to increased evaluation of number of points required for Pareto front approximation 
 	- Inability of existing evolutionary multi-objective algorithms to solve many-objective optimization problems 
 	- <u>Difficulty to visualize</u> the Pareto front with more than four objectives.
+
+:::
 

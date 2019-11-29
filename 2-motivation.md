@@ -2,6 +2,15 @@
 
 ## Why
 
+- Recoginzed Problem
+- Similar to SE problems
+- Not scrutanized like developers
+- Increased Validaton
+- Simplify Scalability
+- No real world Data
+
+::: notes
+
 - Reproducibility in computer science and other fields is a well-recognized problem.  
 - SBSE Falls under the same issues faced by the software engineering problems of reproducing and replicating code and algorithms 
   - The Meta-Heuristic factor plays an important role in this matter
@@ -17,6 +26,8 @@
 - Real world software data is hard to come by
   - they are always increasing in complexity
   - but also the hardware is increasing in processing power 
+
+:::
 
 ## Goal
 
