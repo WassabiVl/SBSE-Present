@@ -21,8 +21,6 @@
 
 [11] O. S. Gómez, N. Juristo, and S. Vegas, “Replications types in experimental disciplines,” presented at the ESEM 2010 - Proceedings of the 2010 ACM-IEEE International Symposium on Empirical Software Engineering and Measurement, 2010.
 
-[12] O. S. Gómez, N. Juristo, and S. Vegas, “Replications types in experimental disciplines,” presented at the ESEM 2010 - Proceedings of the 2010 ACM-IEEE International Symposium on Empirical Software Engineering and Measurement, 2010.
-
 [13] josuesantos, “Internal vs. External Software Quality,” *Mike Long’s Blog*, 31-Oct-2010.  https://meekrosoft.wordpress.com/2010/10/31/internal-and-external-software-quality/
 
 [14] M. D. Uncles and S. Kwok, “Designing research with in-built differentiated replication,” *Journal of Business Research*, vol. 66, no. 9, pp. 1398–1405, Sep. 2013.

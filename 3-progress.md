@@ -2,16 +2,22 @@
 
 ## Resource Gathering
 
-### Websites used:
+:::::::::::::: {.columns}
+::: {.column width="50%"}
 
-3. https://dl.acm.org/ 
-4. https://www.researchgate.net/ 
-5. https://www.ieee.org/
+<u>**Websites used:**</u>
+
+1. https://dl.acm.org/ 
+2. https://www.researchgate.net/ 
+3. https://www.ieee.org/
 4. https://www.google.com 
 5. https://scholar.google.com 
 6. https://github.com/
 
-### Search Terms:
+:::
+::: {.column width="50%"}
+
+<u>**Search Terms:**</u>
 
 1. search based software engineering 
 2. Search-based software engineering 
@@ -22,14 +28,19 @@
 7. Software Product Lines
 8. Reproducibility 
 9. Replication 
+10.Survey
+
+:::
+::::::::::::::
 
 ---
 
 :::::::::::::: {.columns}
-::: {.column width="60%"}
+::: {.column width="50%"}
 
-Methodology
+**<u>Methodology</u>**
 
+- Combination of Search Terms
 - time limit  4 months
 - citation and cited by
 - papers from last 5 years
@@ -38,9 +49,9 @@ Methodology
 - contacting authors
 
 :::
-::: {.column width="60%"}
+::: {.column width="50%"}
 
-Results
+**<u>Results</u>**
 
 - SBSE Algorithms papers found  129 
 - papers with public code 15
@@ -62,7 +73,7 @@ Results
 
 ## Data Types
 
-Variability modeling (VM) falls under 2 categories [17]
+Variability modeling (VM) falls under 2 categories (Czarnecki et al. [17])
 
 1.  Feature modeling (FM)
 2.  Decision modeling (DM)

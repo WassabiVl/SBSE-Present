@@ -6,13 +6,13 @@
 
 ::: notes
 
-Researchers made many changes to the replication process/research that it was impossible to infer the consequences of their comparison, henceforth  they reported  an unsatisfactory aggregation results [12]
+Researchers made many changes to the replication process/research that it was impossible to infer the consequences of their comparison, henceforth  they reported  an unsatisfactory aggregation results [11]
 
 :::
 
 ## Other Fields
 
-Replication groups summary [12]
+Replication groups summary [11]
 
 - little variation
 - variation, but same method
@@ -60,7 +60,7 @@ Replication groups summary [12]
 
 :::
 
-## Schemas [10]:
+## Schemas (Almqvist [10]):
 
 Almqvist defines the following four replication types:
 

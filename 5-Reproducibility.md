@@ -10,7 +10,7 @@
     - less effort
     - new reproduction means
 
-## Problems [7] [5]:
+## Problems (González-Barahona and Roble [7]) (de Oliveira Neto et al. [5]):
 
 - Methodology focus
 - Software and data access
