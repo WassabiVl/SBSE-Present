@@ -14,9 +14,9 @@ Researchers made many changes to the replication process/research that it was im
 
 Replication groups summary [11]
 
-- little variation
-- variation, but same method
-- different methods
+- Little variation
+- Variation, but same method
+- Different methods
 
 ::: notes
 

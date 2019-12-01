@@ -2,10 +2,10 @@
 
 ## Why
 
-- Recoginzed Problem
+- Recognized Problem
 - Similar to SE problems
-- Not scrutanized like developers
-- Increased Validaton
+- Not scrutinized like developers
+- Increased Validation
 - Simplify Scalability
 - No real world Data
 
@@ -31,6 +31,7 @@
 
 ## Goal
 
+- Preproduce and replicate SBSE Experiments
 - Test against real world valued attributed variability models
 - Create an assessment tool to check the level of Reproducibility and Replication
 - Help Future research create easier reproducible and replicable code and results

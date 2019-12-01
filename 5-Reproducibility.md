@@ -89,4 +89,3 @@ difficulty level is determined by:
 
 ![Fig. 4. Proposed reproducible research initiative for evaluation (7)](./RSTRCfig1.png)
 
----
