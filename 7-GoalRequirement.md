@@ -11,20 +11,15 @@
 # Environment
 
 1. Intellij IDE 2019.3
-
 2. Computer Specification
-
-   1.  [Acer Nitro 5 AMD Ryzen 7 2700U](https://www.amd.com/en/products/apu/amd-ryzen-7-2700u)
-   2. 32 GB DDR4
+	1.  [Acer Nitro 5 AMD Ryzen 7 2700U](https://www.amd.com/en/products/apu/amd-ryzen-7-2700u)
+	2. 32 GB DDR4
    
 3. Java 8 update 231 (64-bit)
-
 4.  Windows 10 Home 64-bit Version 1903
-
-5.  Language Expertise
-
-   1.  PHP, JS, and Html Advanced
-   2.  Java, Python Intermediate
-   3.  C, C++ beginner
+5.  Language Expertise:
+	1.  PHP, JS, and Html Advanced
+	2.  Java, Python Intermediate
+	3.  C, C++ beginner
 
    
