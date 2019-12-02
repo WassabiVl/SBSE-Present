@@ -7,7 +7,6 @@
 5.  categories the replication process, i.e. where does scalability fall into and what to take into consideration
 6. alter the algorithm and run replication tests on them
 
----
 
 # Environment
 
