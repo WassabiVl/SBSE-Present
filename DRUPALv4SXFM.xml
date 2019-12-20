@@ -1,117 +1,88 @@
-<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Oct 7, 2014 - 3:57 AM  -->
-<feature_model name="Amazon EC2">
+<feature_model name="DrupalSplot">
 <meta>
-<data name="description">Amazon EC2</data>
-<data name="creator">Jesus Galán</data>
+<data name="description"></data>
+<data name="anabsanchez"></data>
+<data name="anabsanchez@us.es"></data>
+<data name="06-10-2014"></data>
+<data name="LSI department"></data>
+<data name="University of Seville, Soain"></data>
 <data name="address"></data>
-<data name="email">jegalan@us.es</data>
 <data name="phone"></data>
-<data name="website"></data>
-<data name="organization">University of Seville</data>
-<data name="department"></data>
-<data name="date"></data>
-<data name="reference"></data>
-</meta>
-<feature_tree>
-:r EC2(_r)
-	:m OS(_r_1)
-		:g (_r_1_7) [1,1] 
-			: LinuxBased(_r_1_7_8)
-				:g (_r_1_7_8_10) [1,1] 
-					: Linux(_r_1_7_8_10_11)
-					: Suse(_r_1_7_8_10_12)
-					: RedHat(_r_1_7_8_10_13)
-			: WindowsBased(_r_1_7_9)
-				:g (_r_1_7_9_15) [1,1] 
-					: Windows(_r_1_7_9_15_16)
-					: WindowsSQLServer(_r_1_7_9_15_17)
-						:g (_r_1_7_9_15_17_18) [1,1] 
-							: WindowsSQLWeb(_r_1_7_9_15_17_18_19)
-							: WindowsSQLStd(_r_1_7_9_15_17_18_20)
-	:m Instance(_r_2)
-		:g (_r_2_21) [1,1] 
-			: GeneralInstance(_r_2_21_22)
-				:g (_r_2_21_22_27) [1,1] 
-					: M3_medium(_r_2_21_22_27_28)
-					: M3_large(_r_2_21_22_27_29)
-					: M3_xlarge(_r_2_21_22_27_30)
-					: M3_2xlarge(_r_2_21_22_27_31)
-					: M1_small(_r_2_21_22_27_32)
-					: M1_medium(_r_2_21_22_27_33)
-					: M1_large(_r_2_21_22_27_34)
-					: M1_xlarge(_r_2_21_22_27_35)
-			: ComputeOpt(_r_2_21_23)
-				:g (_r_2_21_23_36) [1,1] 
-					: C3_large(_r_2_21_23_36_37)
-					: C3_xlarge(_r_2_21_23_36_38)
-					: C3_2xlarge(_r_2_21_23_36_39)
-					: C3_4xlarge(_r_2_21_23_36_40)
-					: C3_8xlarge(_r_2_21_23_36_41)
-					: C1_medium(_r_2_21_23_36_42)
-					: C1_xlarge(_r_2_21_23_36_43)
-					: CC2_8xlarge(_r_2_21_23_36_44)
-			: GPU(_r_2_21_24)
-				:g (_r_2_21_24_45) [1,1] 
-					: G2_2xlarge(_r_2_21_24_45_46)
-					: CG1_4xlarge(_r_2_21_24_45_47)
-			: MemoryOpt(_r_2_21_25)
-				:g (_r_2_21_25_48) [1,1] 
-					: M2_xlarge(_r_2_21_25_48_49)
-					: M2_2xlarge(_r_2_21_25_48_50)
-					: M2_4xlarge(_r_2_21_25_48_51)
-					: CR1_8xlarge(_r_2_21_25_48_52)
-					: R3_large(_r_2_21_25_48_53)
-					: R3_xlarge(_r_2_21_25_48_54)
-					: R3_2xlarge(_r_2_21_25_48_55)
-					: R3_4xlarge(_r_2_21_25_48_56)
-					: R3_8xlarge(_r_2_21_25_48_57)
-			: StorageOpt(_r_2_21_26)
-				:g (_r_2_21_26_58) [1,1] 
-					: I2_xlarge(_r_2_21_26_58_59)
-					: I2_2xlarge(_r_2_21_26_58_60)
-					: I2_4xlarge(_r_2_21_26_58_61)
-					: I2_8xlarge(_r_2_21_26_58_62)
-					: HS1_8xlarge(_r_2_21_26_58_63)
-					: HI1_4xlarge(_r_2_21_26_58_64)
-	:m Use(_r_3)
-		:g (_r_3_78) [1,1] 
-			: OnDemand(_r_3_78_79)
-			: PaymentDiscounts(_r_3_78_80)
-				:m PayInAdvance(_r_3_78_80_81)
-					:g (_r_3_78_80_81_82) [1,1] 
-						: OneYearTerm(_r_3_78_80_81_82_83)
-							:g (_r_3_78_80_81_82_83_85) [1,1] 
-								: OneYearLight(_r_3_78_80_81_82_83_85_86)
-								: OneYearMedium(_r_3_78_80_81_82_83_85_87)
-								: OneYearHeavy(_r_3_78_80_81_82_83_85_88)
-						: ThreeYearsTerm(_r_3_78_80_81_82_84)
-							:g (_r_3_78_80_81_82_84_89) [1,1] 
-								: ThreeYearsLight(_r_3_78_80_81_82_84_89_90)
-								: ThreeYearsMedium(_r_3_78_80_81_82_84_89_91)
-								: ThreeYearsHeavy(_r_3_78_80_81_82_84_89_92)
-	:m Location(_r_4)
-		:g (_r_4_65) [1,1] 
-			: NorthAmerica(_r_4_65_66)
-				:g (_r_4_65_66_70) [1,1] 
-					: VA(_r_4_65_66_70_71)
-					: CA(_r_4_65_66_70_72)
-					: ORE(_r_4_65_66_70_73)
-			: Europe(_r_4_65_67)
-			: AsiaOceania(_r_4_65_68)
-				:g (_r_4_65_68_74) [1,1] 
-					: SIN(_r_4_65_68_74_75)
-					: JP(_r_4_65_68_74_76)
-					: AUS(_r_4_65_68_74_77)
-			: SouthAmerica(_r_4_65_69)
-	:m Dedication(_r_5)
-		:g (_r_5_93) [1,1] 
-			: Public(_r_5_93_94)
-			: Dedicated(_r_5_93_95)
-	:o EBS(_r_6)
-		:g (_r_6_96) [1,1] 
-			: StdEBS(_r_6_96_97)
-			: ssdEBS(_r_6_96_98)
+<data name="http://www.isa.us.es/members/anabelen.sanchez"></data>
+<data name="anabsanchez-sosym14"></data>
+</meta><feature_tree>
+r: DRUPAL (DRUPAL)
+	:m NODE (NODE)
+		:o BLOG (BLOG)
+		:o FORUM (FORUM)
+	:m SYSTEM (SYSTEM)
+	:m FILTER (FILTER)
+	:m FIELD (FIELD)
+		:m FIELD_SQL_STORAGE (FIELD_SQL_STORAGE)
+		:m TEXT (TEXT)
+		:o OPTIONS (OPTIONS)
+	:o FIELD_UI (FIELD_UI)
+	:o IMAGE (IMAGE)
+	:o FILE (FILE)
+	:o CTOOLS (CTOOLS)
+		:o CTOOLS_ACCESS_RULESET (CTOOLS_ACCESS_RULESET)
+		:o VIEWS_CONTENT (VIEWS_CONTENT)
+		:o CTOOLS_CUSTOM_CONTENT (CTOOLS_CUSTOM_CONTENT)
+	:m USER (USER)
+	:o VIEWS (VIEWS)
+		:o VIEWS_UI (VIEWS_UI)
+	:o TAXONOMY (TAXONOMY)
+	:o COMMENT (COMMENT)
+	:o PATH (PATH)
+	:o TOKEN (TOKEN)
+	:o PATHAUTO (PATHAUTO)
+	:o LIBRARIES_API (LIBRARIES_API)
+	:o DATE (DATE)
+		:m DATE_API (DATE_API)
+		:o DATE_POPUP (DATE_POPUP)
+		:o DATE_VIEWS (DATE_VIEWS)
+	:o WEBFORM (WEBFORM)
+	:o GOOGLE_ANALYTICS (GOOGLE_ANALYTICS)
+	:o LINK (LINK)
+	:o CKEDITOR (CKEDITOR)
+	:o BACKUP_AND_MIGRATE (BACKUP_AND_MIGRATE)
+	:o JQUERY_UPDATE (JQUERY_UPDATE)
+	:o CAPTCHA (CAPTCHA)
+		:o IMAGE_CAPTCHA (IMAGE_CAPTCHA)
+	:o FEATURES (FEATURES)
+	:o PANELS (PANELS)
+		:o PANEL_NODES (PANEL_NODES)
+		:o PANELS_IN_PLACE_EDITOR (PANELS_IN_PLACE_EDITOR)
+	:o ENTITY_API (ENTITY_API)
+		:o ENTITY_TOKENS (ENTITY_TOKENS)
+	:o IMCE (IMCE)
+	:o RULES (RULES)
+		:o RULES_SCHEDULER (RULES_SCHEDULER)
+		:o RULES_UI (RULES_UI)
 </feature_tree>
 <constraints>
+CTC-1: ~FORUM or TAXONOMY
+CTC-2: ~FORUM or OPTIONS
+CTC-3: ~FORUM or COMMENT
+CTC-4: ~IMAGE or FILE
+CTC-5: ~VIEWS_CONTENT or VIEWS
+CTC-6: ~VIEWS or CTOOLS
+CTC-7: ~VIEWS_UI or CTOOLS
+CTC-8: ~TAXONOMY or OPTIONS
+CTC-9: ~PATHAUTO or TOKEN
+CTC-10: ~PATHAUTO or PATH
+CTC-11: ~DATE_POPUP or DATE_API
+CTC-12: ~DATE_VIEWS or DATE_API
+CTC-13: ~DATE_VIEWS or VIEWS
+CTC-14: ~DATE_VIEWS or CTOOLS
+CTC-15: ~PANELS or CTOOLS
+CTC-16: ~PANEL_NODES or CTOOLS
+CTC-17: ~PANELS_IN_PLACE_EDITOR or CTOOLS
+CTC-18: ~RULES or ENTITY_API
+CTC-19: ~RULES or ENTITY_TOKENS
+CTC-20: ~RULES_SCHEDULER or ENTITY_API
+CTC-21: ~RULES_SCHEDULER or ENTITY_TOKENS
+CTC-22: ~RULES_UI or ENTITY_API
+CTC-23: ~RULES_UI or ENTITY_TOKENS
 </constraints>
 </feature_model>
