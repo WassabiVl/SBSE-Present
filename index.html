@@ -169,7 +169,9 @@
 </tbody>
 </table>
 <p><em>Table 1: Number of Papers Published in Major Conferences and Journals in Recent Years (Mane and Rao [4])</em></p>
-<aside class="notes">
+</section>
+<section class="slide level2">
+
 <p>Definition:</p>
 <ol type="1">
 <li><p><strong>SBSE</strong> [1]</p>
@@ -192,60 +194,60 @@
 <li><u>Difficulty to visualize</u> the Pareto front with more than four objectives.</li>
 </ul></li>
 </ol>
-</aside>
 </section></section>
 <section><section id="motivation" class="title-slide slide level1"><h1>Motivation</h1></section>
 <section id="why" class="slide level2">
 <h2>Why</h2>
 <ul>
-<li>Recognized Problem</li>
-<li>Similar to SE problems</li>
-<li>Not scrutinized like developers</li>
-<li>Increased Validation</li>
-<li>Simplify Scalability</li>
-<li>No real world Data</li>
-</ul>
-<aside class="notes">
+<li>Recognized Problem
 <ul>
 <li>Reproducibility in computer science and other fields is a well-recognized problem.<br />
 </li>
+</ul></li>
+<li>Similar to SE problems
+<ul>
 <li>SBSE Falls under the same issues faced by the software engineering problems of reproducing and replicating code and algorithms
 <ul>
 <li>The Meta-Heuristic factor plays an important role in this matter</li>
 </ul></li>
+</ul></li>
+<li>Lacks Developer Scrutiny
+<ul>
 <li>Software engineering and computer scientists research does not fall under the same scrutiny of developers
 <ul>
 <li>Developers have to always check, refactor, and update their code on a continuous cycle</li>
 <li>they have to work with ever changing team so interchangeability and exchange of codes has to smooth</li>
-<li>create tests to validate the code
-<ul>
-<li>unit vs functional testing</li>
+<li>creation of validation Tests ( Unit and functional Tests) to validate the individual parts of the code and the code as a whole</li>
 </ul></li>
 <li>Try not to reinvent the wheel</li>
+<li>use existing resources, libraries, algorithms</li>
 </ul></li>
+<li>Increased Validation
+<ul>
 <li>As the number of SBSE publications increase, so does the need to validation
 <ul>
 <li>with the number of researches depending on previous work to progress SBSE forward</li>
 </ul></li>
-<li>Simplify Scalability in SBSE</li>
+</ul></li>
 <li>Real world software data is hard to come by
 <ul>
 <li>they are always increasing in complexity</li>
 <li>but also the hardware is increasing in processing power</li>
+<li>no company wants to release their data or SPL to the public</li>
 </ul></li>
 </ul>
-</aside>
 </section>
 <section id="goal" class="slide level2">
 <h2>Goal</h2>
 <ul>
 <li>Preproduce and replicate SBSE Experiments</li>
+<li>Simplify Scalability in SBSE, and testing against real-world attributed values</li>
 <li>Test against real world valued attributed variability models</li>
 <li>Create an assessment tool to check the level of Reproducibility and Replication</li>
 <li>Help Future research create easier reproducible and replicable code and results</li>
 </ul>
 </section></section>
-<section><section id="progress" class="title-slide slide level1"><h1>Progress</h1></section>
+<section><section id="focus" class="title-slide slide level1"><h1>Focus</h1><p>Feature Variability models as they provide the ability to replicate with real data # Progress</p></section>
 <section id="resource-gathering" class="slide level2">
 <h2>Resource Gathering</h2>
 <div class="columns">
@@ -367,50 +369,38 @@
 </tbody>
 </table>
 <p><em>Table 2. Data Types found in research Papers</em></p>
-<aside class="notes">
 <p>SPLOT Website and LVAT</p>
 <p>http://www.splot-research.org/ - A website designed to create and save features models used by researchers - some features can range from 10 to 625 with ability to calculate valid configurations - but attributes have to be augmented into the features</p>
-</aside>
 </section>
 <section id="algorithms-feature-tree" class="slide level2">
 <h2>Algorithms Feature tree</h2>
 <p><a href="./Algo%20Tree%20Chart%20for%20presentation.pdf">Algorithms Tree Chart</a></p>
 </section></section>
-<section><section id="reproducibility-vs-replication" class="title-slide slide level1"><h1>Reproducibility vs Replication</h1></section>
+<section><section id="reproducibility-vs-replication" class="title-slide slide level1"><h1>Reproducibility vs Replication</h1><p><strong><u>Reproducibility:</u></strong> is the closeness of the agreement between the results of measurements of the same measurand carried out with same methodology described in the corresponding scientific evidence. [6]</p>
+<p><u><strong>Reproducibility</strong></u> the ability of a study to be reproduced, in whole or in part, by an independent research team. partially because being able to repeat specific steps of a study, while changing others, is the basis for accurate benchmarking of research methodologies and tools, and to detect intermediate steps subject to improvement [7]</p>
+<p><strong><u>Replication:</u></strong> An attempt to reproduce an empirical study in order to further validate its findings, or the successful outcome of such an attempt. Replication is often proposed as one of the major avenues to achieve, or ensure, greater validity in software engineering research. [10]</p>
+<p>Although (Gómez et al. [11]) describes the next items as SE replication, this is the best example I could find that can draw the line between Reproduction and Replication. Taking the 5 elements Gómez describes.</p></section>
 <section id="five-elements-in-se-experimentation-gómez-et-al.-11" class="slide level2">
 <h2>Five elements in SE experimentation (Gómez et al. [11])</h2>
 <ol type="1">
-<li><strong>Site</strong></li>
-<li><strong>Experimenters</strong></li>
-<li><strong>Apparatus</strong></li>
-<li><strong>Operationalizations</strong></li>
-<li><strong>Population Properties</strong></li>
-</ol>
-<aside class="notes">
-<p>Definitions</p>
+<li><strong><u>Site:</u></strong> The location of the experiment</li>
+<li><strong><u>Experimenters:</u></strong>
 <ol type="1">
-<li><strong><u>Site:</u></strong> Represents the place where the replication is conducted. Exp. Computer</li>
-<li><strong><u>Experimenters:</u></strong> The experimenters in a replication can be the same people as participated in the reference experiment, different experimenters or a mixture of both</li>
+<li>The experimenters in a replication can be the same people as participated in the reference experiment, different experimenters or a mixture of both</li>
+</ol></li>
 <li><strong><u>Apparatus:</u></strong> design, instruments, forms, materials, experimental objects and procedures used to run an experiment</li>
-<li><strong><u>Operationalizations:</u></strong> The cause operationalizations represent the treatments to be evaluated in the experiment (independent variables) whereas the effect operationalizations represent the response variables (dependent variables) that we use to measure the effects of the treatments.</li>
+<li><strong><u>Operationalizations:</u></strong> The cause operationalizations represent the treatments to be evaluated in the experiment (independent variables) whereas the effect operationalizations represent the response variables (dependent variables) that we use to measure the effects of the treatments.
+<ol type="1">
+<li>is a process of defining the measurement of a phenomenon that is not directly measurable, though its existence is inferred by other phenomena. Operationalization thus defines a fuzzy concept so as to make it clearly distinguishable, measurable, and understandable by empirical observation. In a broader sense, it defines the extension of a concept—describing what is and is not an instance of that concept.</li>
+<li>Operationalization is the process of strictly defining variables into measurable factors. The process defines fuzzy concepts and allows them to be measured, empirically and quantitatively. [23]</li>
+</ol></li>
 <li><strong><u>Population Properties:</u></strong> subjects participating/experimental objects</li>
 </ol>
-<p><strong><u>Reproducibility:</u></strong> is the closeness of the agreement between the results of measurements of the same measurand carried out with same methodology described in the corresponding scientific evidence. [6]</p>
-<p><u><strong>Reproducibility</strong></u> the ability of a study to be reproduced, in whole or in part, by an independent research team. partially because being able to repeat specific steps of a study, while changing others, is the basis for accurate benchmarking of research methodologies and tools, and to detect intermediate steps subject to improvement [7]</p>
-<p><strong><u>Replication:</u></strong> An attempt to reproduce an empirical study in order to further validate its findings, or the successful outcome of such an attempt. Replication is often proposed as one of the major avenues to achieve, or ensure, greater validity in software engineering research. [10]</p>
-</aside>
 </section>
 <section id="functionspurposes-of-a-replication-in-se-11" class="slide level2">
 <h2>Functions/Purposes of a replication in SE [11]</h2>
 <ol type="1">
-<li>Control for Sampling Error</li>
-<li>Control for Artefactual Results</li>
-<li>Determine Limits for Operationalizations</li>
-<li>Determine Limits in the Population Properties.</li>
-</ol>
-<aside class="notes">
-<ol type="1">
-<li>Control for Sampling Error
+<li><u>Control for Sampling Error</u>
 <ul>
 <li>if the 5 elements are kept unchanged, the purpose is verify that the results output by the reference experiment are not chance outcomes</li>
 </ul></li>
@@ -428,19 +418,9 @@
 <li>the purpose of this replication is to determine the types of subjects or the types of experimental objects to which the results of the replication can be generalized.</li>
 </ul></li>
 </ol>
-</aside>
 </section>
 <section id="best-practices-for-software-replication-and-reproducibility-widder-et-al.-16" class="slide level2">
 <h2>6 Best Practices for Software Replication and Reproducibility (Widder et al. [16])</h2>
-<ol type="1">
-<li><strong>Deliberate Design</strong></li>
-<li><strong>Documentation</strong></li>
-<li><strong>Use Existing Components</strong></li>
-<li><strong>Use a Version Control System</strong></li>
-<li><strong>Testing</strong></li>
-<li><strong>Public Release</strong></li>
-</ol>
-<aside class="notes">
 <ol type="1">
 <li><strong>Deliberate Design</strong>
 <ol type="1">
@@ -473,7 +453,6 @@
 </ol></li>
 </ol></li>
 </ol>
-</aside>
 </section>
 <section id="barriers-summary-16" class="slide level2">
 <h2>Barriers (summary) [16]:</h2>
@@ -510,35 +489,34 @@
 <section id="problems-gonzález-barahona-and-roble-7-de-oliveira-neto-et-al.-5" class="slide level2">
 <h2>Problems (González-Barahona and Roble [7]) (de Oliveira Neto et al. [5]):</h2>
 <ul>
-<li>Methodology focus</li>
-<li>Software and data access</li>
-<li>Software Testing</li>
-<li>scope definition</li>
-</ul>
-<aside class="notes">
+<li>Methodology focus
 <ul>
 <li>Reproducibility researchers usually focus on the description of the methodology [7]
 <ul>
 <li>They hope to reproduce them with the same, similar, or completely different source data to verify, complement or extend the results</li>
 </ul></li>
 <li>Methodology in a paper may not be enough [7]</li>
+</ul></li>
+<li>Software and data access
+<ul>
 <li>Lack of access to such software and data [7]
 <ul>
 <li>This discourages and makes reproduction more difficult</li>
 </ul></li>
 <li>Evaluating is not easy since many information and artefacts are required in order to thoroughly evaluate the capabilities of a testing technique [5]</li>
+</ul></li>
+<li>Software Testing
+<ul>
 <li>Software testing is very multidisciplinary [5]</li>
+</ul></li>
+<li>scope definition
+<ul>
 <li>Drawing a precise line to establish the scope affecting the test is very challenging [5]</li>
+</ul></li>
 </ul>
-</aside>
 </section>
 <section id="one-solution-compendiums-5" class="slide level2">
 <h2>One Solution: Compendiums [5]</h2>
-<ul>
-<li>RCC <a href="https://research-compendium.science/">Reproducibility Research Compendium</a></li>
-<li>tagged with “research compendium” [8]</li>
-</ul>
-<aside class="notes">
 <ul>
 <li>RCC ( Reproducibility Research Compendium) [8]
 <ul>
@@ -553,14 +531,12 @@
 <li>they tried to simplify the process by making researchers add a tag to there repository “research compendium” or “research-compendium”</li>
 </ul></li>
 </ul>
-</aside>
 </section>
 <section id="elements-that-impact-reproducibility" class="slide level2">
 <h2>Elements that Impact Reproducibility</h2>
 <figure>
 <img data-src="./reproducibilityElements.bmp" alt="" /><figcaption>Fig. 3 Elements with an impact on reproducibility, organized according to their relationships during the research process (7)</figcaption>
 </figure>
-<aside class="notes">
 <ol type="1">
 <li><strong><u>Data source</u></strong>: Where the “real world” data resides .</li>
 <li><strong><u>Retrieval methodology</u></strong>. Data has to be retrieved if the researchers can’t work directly with the Source</li>
@@ -571,18 +547,9 @@
 <li><strong><u>Analysis methodology.</u></strong> Process, usually implemented (totally or in part) with software tools, of how the processed dataset is analyzed and studied to obtain the results dataset.</li>
 <li><strong><u>Results dataset.</u></strong> It is produced by applying the analysis methodology to the processed dataset and will be the basis for the research results and outcomes.</li>
 </ol>
-</aside>
 </section>
 <section id="impact-level-on-reproducibility-7" class="slide level2">
 <h2>Impact Level on Reproducibility [7]</h2>
-<ul>
-<li><em>Identification</em></li>
-<li><em>Description</em></li>
-<li><em>Availability</em></li>
-<li><em>Persistence</em></li>
-<li><em>Flexibility</em></li>
-</ul>
-<aside class="notes">
 <p>The level of detail, availability, and characteristic of each elements impacts heavily on the reproducibility. difficulty level is determined by:</p>
 <ul>
 <li><em>Identification</em>: Where can the (original) element be obtained from?</li>
@@ -591,7 +558,6 @@
 <li><em>Persistence</em>: How likely is the element to be available in the future?</li>
 <li><em>Flexibility</em>. How flexible is the element, how easily can it be adapted to new environments?</li>
 </ul>
-</aside>
 <figure>
 <img data-src="./RSTRCfig1.png" alt="" /><figcaption>Fig. 4. Proposed reproducible research initiative for evaluation (7)</figcaption>
 </figure>
@@ -602,42 +568,34 @@
 <figure>
 <img data-src="./doge.bmp" alt="" /><figcaption>Fig. 5 Downfall</figcaption>
 </figure>
-<aside class="notes">
 <p>Researchers made many changes to the replication process/research that it was impossible to infer the consequences of their comparison, henceforth they reported an unsatisfactory aggregation results [11]</p>
-</aside>
 </section>
 <section id="other-fields" class="slide level2">
 <h2>Other Fields</h2>
 <p>Replication groups summary [11]</p>
 <ul>
-<li>Little variation</li>
-<li>Variation, but same method</li>
-<li>Different methods</li>
-</ul>
-<aside class="notes">
-<ol type="1">
+<li>Little variation
+<ul>
 <li>Replications that vary little or not at all with respect to the reference experiment.</li>
+</ul></li>
+<li>Variation, but same method
+<ul>
 <li>Replications that do vary but still follow the same method as the reference experiment.</li>
+</ul></li>
+<li>Different methods
+<ul>
 <li>Replications that use different methods to verify the reference experiment results.</li>
-</ol>
-</aside>
+</ul></li>
+</ul>
 </section>
 <section id="internal-vs-external-13" class="slide level2">
 <h2>Internal Vs External [13]</h2>
 <p><strong><u>External Quality Characteristics:</u></strong> Correctness, Usability, Efficiency, Reliability, Integrity, Adaptability, Accuracy, and Robustness.</p>
 <p><strong><u>Internal Quality Characteristics:</u></strong> Maintainability, Flexibility, Portability, Re-usability, Readability, Testability, and Understandability.</p>
-<aside class="notes">
 <p>“<em>The <strong>internal–external distinction</strong> is a distinction used in philosophy to divide an <a href="https://en.wikipedia.org/wiki/Ontology">ontology</a> into two parts: an internal part consisting of a linguistic framework and observations related to that framework, and an external part concerning practical questions about the utility of that framework.</em>” [6]</p>
-</aside>
 </section>
 <section id="close-vs-differentiated-15" class="slide level2">
 <h2>Close Vs Differentiated [15]</h2>
-<ul>
-<li><strong><u>Exact replication</u></strong></li>
-<li><strong><u>Close replication</u></strong></li>
-<li><strong><u>Differentiated replication</u></strong></li>
-</ul>
-<aside class="notes">
 <p><strong><u>Exact replication:</u></strong> is where <em>Conceptual, Methodological, and Substantive</em> domains of research are held constant</p>
 <ul>
 <li>Repeat studies exactly reproduce the conditions of the original study in an attempt to see whether the empirical findings remain the same</li>
@@ -645,7 +603,7 @@
 </ul>
 <p><strong><u>Close replication:</u></strong> is where slight variation is permitted in <em>Conceptual, Methodological, or Substantive</em> domains of research - Close replication is a category in which most aspects of a study are invariant - Use of a non-randomly selected holdout sample is a simple kind of close replication</p>
 <p><strong><u>Differentiated replication:</u></strong> is where the variation in <em>Conceptual, Methodological, and/or Substantive</em> domains of research is deliberate or purposeful - Differentiated replication discovers whether an empirical finding generalizes—whether the finding is a candidate empirical generalizations</p>
-</aside>
+<p>:::</p>
 </section>
 <section id="schemas-almqvist-10" class="slide level2">
 <h2>Schemas (Almqvist [10]):</h2>
@@ -659,10 +617,14 @@
 </section></section>
 <section id="goal-requirement" class="title-slide slide level1"><h1>Goal Requirement</h1><ol type="1">
 <li>Create score based assessment category of reproducibility and replication for the researches</li>
-<li>categories the other types of data found outside SPL</li>
-<li>Choose 7-10 algorithms, give them a score</li>
-<li>run a Control for Artefactual Results for the 7 algorithms as reproduction</li>
-<li>categories the replication process, i.e. where does scalability fall into and what to take into consideration</li>
+<li>Choose 7-10 algorithms, that have FM data, give them a Reproducibility/Replication Index</li>
+<li>Run a Control for Artefactual Results for the 7 algorithms as reproduction</li>
+<li>Categories the replication process,
+<ol type="1">
+<li>i.e. where does scalability fall into and what to take into consideration</li>
+<li>where does introduction of interactions to the data fall into</li>
+<li>where does the attributed real-world data fall into</li>
+</ol></li>
 <li>alter the algorithm and run replication tests on them</li>
 </ol></section>
 <section id="environment" class="title-slide slide level1"><h1>Environment</h1><ol type="1">
@@ -701,7 +663,8 @@
 <p>[19] “Walking Fish Group: Hypervolume Project.” [Online]. Available: http://www.wfg.csse.uwa.edu.au/hypervolume/. [Accessed: 29-Nov-2019].</p>
 <p>[20] “ETH - SOP - Downloads/Material - Supplementary Material - Test Problem Suite.” [Online]. Available: https://sop.tik.ee.ethz.ch/download/supplementary/testProblemSuite/. [Accessed: 29-Nov-2019].</p>
 <p>[21] “Google Code Archive - Long-term storage for Google Code Project Hosting.” [Online]. Available: https://code.google.com/archive/p/linux-variability-analysis-tools/. [Accessed: 29-Nov-2019].</p>
-<p>[22] “SPLOT - Software Product Line Online Tools.” [Online]. Available: http://www.splot-research.org/. [Accessed: 29-Nov-2019].</p></section>
+<p>[22] “SPLOT - Software Product Line Online Tools.” [Online]. Available: http://www.splot-research.org/. [Accessed: 29-Nov-2019].</p>
+<p>[23] “Operationalization - Defining Variables Into Measurable Factors.” [Online]. Available: https://explorable.com/operationalization. [Accessed: 02-Dec-2019].</p></section>
 <section id="sbse-algorithm-feature-tree-references" class="slide level2">
 <h2>SBSE Algorithm Feature Tree References</h2>
 <p>[1] T. H. Tan, Y. Xue, M. Chen, J. Sun, Y. Liu, and J. S. Dong, “Optimizing Selection of Competing Features via Feedback-directed Evolutionary Algorithms,” in <em>Proceedings of the 2015 International Symposium on Software Testing and Analysis</em>, New York, NY, USA, 2015, pp. 246–256.</p>

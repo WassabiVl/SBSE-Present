@@ -41,6 +41,8 @@
 
 [22]  “SPLOT - Software Product Line Online Tools.” [Online]. Available: http://www.splot-research.org/. [Accessed: 29-Nov-2019].
 
+[23] “Operationalization - Defining Variables Into Measurable Factors.” [Online]. Available: https://explorable.com/operationalization. [Accessed: 02-Dec-2019].
+
 ## SBSE Algorithm Feature Tree References
 
 [1] T. H. Tan, Y. Xue, M. Chen, J. Sun, Y. Liu, and J. S. Dong, “Optimizing Selection of Competing Features via Feedback-directed Evolutionary Algorithms,” in *Proceedings of the 2015 International Symposium on Software Testing and Analysis*, New York, NY, USA, 2015, pp. 246–256.

@@ -4,27 +4,22 @@
 
 ![Fig. 5 Downfall](./doge.bmp)
 
-::: notes
+
 
 Researchers made many changes to the replication process/research that it was impossible to infer the consequences of their comparison, henceforth  they reported  an unsatisfactory aggregation results [11]
-
-:::
 
 ## Other Fields
 
 Replication groups summary [11]
 
 - Little variation
+  - Replications that vary little or not at all with respect to the reference experiment.
 - Variation, but same method
+  - Replications that do vary but still follow the same method as the reference experiment.
 - Different methods
+  - Replications that use different methods to verify the reference experiment results.
 
-::: notes
 
-1. Replications that vary little or not at all with respect to the reference experiment.
-2. Replications that do vary but still follow the same method as the reference experiment.
-3. Replications that use different methods to verify the reference experiment results.
-
-:::
 
 ## Internal Vs External [13]
 
@@ -32,19 +27,13 @@ Replication groups summary [11]
 
 **<u>Internal Quality Characteristics:</u>** Maintainability, Flexibility, Portability, Re-usability, Readability, Testability, and Understandability.
 
-::: notes
+
 
  "*The **internal–external distinction** is a distinction used in philosophy to divide an [ontology](https://en.wikipedia.org/wiki/Ontology) into two parts: an internal part consisting of a linguistic framework  and observations related to that framework, and an external part  concerning practical questions about the utility of that framework.*" [6] 
 
-::: 
+
 
 ## Close Vs Differentiated [15]
-
-- **<u>Exact replication</u>** 
-- **<u>Close replication</u>** 
-- **<u>Differentiated replication</u>** 
-
-::: notes
 
 **<u>Exact replication:</u>**  is where *Conceptual, Methodological, and Substantive* domains of research are held constant
 

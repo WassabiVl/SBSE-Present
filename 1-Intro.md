@@ -44,7 +44,7 @@ The term SBSE was first used in 2001 by Harman and Jones [1]
 
 
 
-::: notes
+---
 
 Definition:
 
@@ -63,5 +63,5 @@ Definition:
 	- Inability of existing evolutionary multi-objective algorithms to solve many-objective optimization problems 
 	- <u>Difficulty to visualize</u> the Pareto front with more than four objectives.
 
-:::
+
 

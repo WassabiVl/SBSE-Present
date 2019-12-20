@@ -91,7 +91,7 @@ Variability modeling (VM) falls under 2 categories (Czarnecki et al. [17])
 
 *Table 2. Data Types found in research Papers*
 
-::: notes
+
 
 SPLOT Website and LVAT 
 
@@ -100,7 +100,7 @@ http://www.splot-research.org/
 - some features can range from 10 to 625 with ability to calculate valid configurations
 - but attributes have to be augmented into the features
 
-::: 
+
 
 ## Algorithms Feature tree
 
